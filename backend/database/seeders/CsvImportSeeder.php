@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use App\Models\LanguageType;
 use App\Models\Score;
 use App\Models\Student;
+use App\Models\StudentLanguage;
 use App\Models\Subject;
 use Illuminate\Database\Seeder;
 
@@ -55,8 +56,8 @@ class CsvImportSeeder extends Seeder
             }
 
             // Process language type (last column)
-            if (!isset($data[10]) && $data[10] !== '' && isset($languageTypes[$data[10]])) {
-                Student::create([
+            if (isset($data[10]) && $data[10] !== '' && isset($languageTypes[$data[10]])) {
+                StudentLanguage::create([
                     'student_id' => $student->id,
                     'language_type_id' => $languageTypes[$data[10]]['id'],
                 ]);

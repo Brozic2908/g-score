@@ -65,7 +65,7 @@ php artisan key:generate
 6 Run database migrations:
 
 ```bash
-php artisan migrate
+php artisan migrate --seed
 ```
 
 7 Start the Laravel development server:

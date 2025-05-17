@@ -34,12 +34,17 @@ class ScoreController extends Controller
             $formattedScores[$score->subject->name] = $score->score;
         }
 
+        // Get all languages for the student
+        $languages = $student->language->map(function ($studentLanguage) {
+            return $studentLanguage->languageType->name;
+        })->toArray();
+
         return response()->json([
             'success' => true,
             'student' => [
                 'registration_number' => $student->registration_number,
                 'scores' => $formattedScores,
-                'language' => $student->language,
+                'languages' => $languages
             ]
         ]);
     }
