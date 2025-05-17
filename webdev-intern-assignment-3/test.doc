@@ -1,0 +1,63 @@
+You will build a simple web.
+
+Web template example. you will make it more beautiful !!!
+
+Requirements
+
+From the raw data file (diem_thi_thpt_2024 copy.csv) save it into the database with the appropriate structure
+
+Your application should have at least features in Must have, things in Nice to have is optional (but yeah, it's attractive if you have).
+
+Must have:
+
+The conversion of raw data into the database must be coded and located in this source code. (hint: recommend use migration and seeder)
+
+- Write a feature to check score from registration number input
+
+- Write a feature report. There will be 4 levels including: >=8 points, 8 points > && >=6 points, 6 points > && >= 4 points, < 4 points
+
+- Statistics of the number of students with scores in the above 4 levels by subjects. (Chart)
+
+- List top 10 students of group A including (math, physics, chemistry)
+
+Nice to have:
+
+- Responsive design (look good on all devices: desktops, tablets & mobile phones).
+
+- Setup project use Docker.
+
+Deploy the application to go live.
+
+Technical Requirements
+
+Frontend
+
+You can use ReactJS, bootstrap v5.
+
+Fonts (optional);
+
+https://fonts.google.com/specimen/Rubik?query=Rubik
+
+You can use some available interfaces such as: AdminLTe, TailAdmin...
+
+Backend:
+
+Use Laravel(PHP)
+
+Mandatory use of OOP programming for managing subjects.
+
+Need form validation and logic tightening.
+
+Use ORM for interacting with Database.
+
+Database: You can use postgreSQL, Mysql, mongoDB... to manage or cache the data.
+
+Deployment
+
+Some providers allow free deployment for the trial version (note: Maybe some suppliers will update their policies and prices)
+
+Vercel (Zeit) - https://vercel.com - Deploying Front & Backend apps at free of cost
+
+Heliohost - https://heliohost.org - PHP, Ruby on rails, perl, django, java(jsp)
+
+Don't forget to add README.md which includes guide to run your project locally and demo link.

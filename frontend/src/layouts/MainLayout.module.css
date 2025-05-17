@@ -1,0 +1,15 @@
+/* MainLayout.module.css */
+.mainContent {
+  margin-left: 0; /* bằng chiều rộng sidebar */
+  background-color: #f2f2f2;
+  min-height: calc(100vh - var(--header-height));
+  transition: margin-left 0.3s ease-in-out;
+  margin-top: var(--header-height);
+  margin-left: var(--sideBar-width);
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    margin-left: 0;
+  }
+}

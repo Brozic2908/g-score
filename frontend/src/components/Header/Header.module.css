@@ -1,0 +1,9 @@
+.HeaderCard {
+  background: linear-gradient(0, #122aa8, #0f2254);
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+}
